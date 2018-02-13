@@ -16,9 +16,9 @@
 
 package com.juzix.jugo.developer;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 
@@ -26,13 +26,8 @@ import javax.ws.rs.Path;
 @Path("/hello")
 public class Endpoint {
 
-//	private final Service service;
-	@Inject
+	@Autowired
 	private Service service;
-
-//	public Endpoint(Service service) {
-//		this.service = service;
-//	}
 
 	@GET
 	public String message() {

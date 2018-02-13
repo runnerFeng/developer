@@ -17,9 +17,8 @@
 package com.juzix.jugo.developer;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
 
-@Component
+@org.springframework.stereotype.Service
 public class Service {
 
 	@Value("${message:World}")
